@@ -59,6 +59,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Talkach.Client\Talkach.Client.csproj">
+      <Project>{AEA11D3C-8D0F-4B5D-B6F6-B3AD8AFE8661}</Project>
+      <Name>Talkach.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
