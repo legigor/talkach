@@ -5,6 +5,9 @@ namespace Talkach.Client
 {
     public interface IChat : IGrainWithIntegerKey
     {
-        Task Register(ITalker talker);
+        Task AppendMessage(ITalker talker, string msg);
+
+        Task SubscribeForMessages(IChatObserver subscriber);
+        Task UnsubscribeFromMessages(IChatObserver subscriber);
     }
 }

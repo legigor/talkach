@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IChat.cs" />
+    <Compile Include="IChatObserver.cs" />
     <Compile Include="ITalker.cs" />
     <Compile Include="Properties\orleans.codegen.cs" />
   </ItemGroup>

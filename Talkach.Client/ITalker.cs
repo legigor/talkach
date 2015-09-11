@@ -5,6 +5,7 @@ namespace Talkach.Client
 {
     public interface ITalker : IGrainWithStringKey
     {
-        Task<string> GetName();
+        Task JoinChat(IChat chat);
+        Task StartTheGame();
     }
 }
