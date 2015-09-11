@@ -31,7 +31,10 @@ namespace Talkach.Server
             };
 
             _siloHost.InitializeOrleansSilo();
+
+
             var startedOk = _siloHost.StartOrleansSilo();
+
             if (!startedOk)
                 throw new SystemException($"Failed to start Orleans silo '{_siloHost.Name}' as a {_siloHost.Type} node");
         }

@@ -39,6 +39,9 @@ namespace Talkach
             {
                 Console.WriteLine(e.Message);
             }
+
+            Console.WriteLine("BYE!");
+            Console.ReadKey(false);
         }
     }
 }

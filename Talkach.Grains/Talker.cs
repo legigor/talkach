@@ -1,9 +1,10 @@
 ﻿using System.Threading.Tasks;
+using Orleans;
 using Talkach.Client;
 
 namespace Talkach.Grains
 {
-    public class Talker : ITalker
+    public class Talker : Grain, ITalker
     {
         public Task<string> GetName()
         {
